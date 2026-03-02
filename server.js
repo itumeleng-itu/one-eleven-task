@@ -13,8 +13,7 @@ app.post('/',(req,res)=>{
     const sortedArray = data.split("").sort()
 
     res.status(200).json({
-        original:data,
-        sorted:sortedArray
+        word:sortedArray
     })
 })
 
